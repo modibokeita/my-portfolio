@@ -1,0 +1,98 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(237, 47%, 20%);
+    color: white;
+    border-bottom: 5px solid hsl(238, 60%, 11%);
+    padding: 0.5rem 1rem;
+}
+
+/* Brand title styling */
+.brand-title {
+    font-size: 1.5rem;
+    border: 3px solid hsl(171, 89%, 43%);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+/* Navigation link container */
+.nav-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* List items styling */
+.nav-link li {
+    list-style: none;
+}
+
+/* Navigation links styling */
+.nav-link li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link li a:hover {
+    background-color: hsl(237, 47%, 50%);
+}
+
+/* Toggle button styling */
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 0.75rem;
+    right: 1rem;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-link li {
+        text-align: center;
+    }
+
+    .nav-link li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+}
