@@ -7,7 +7,7 @@
 }
 body {
     margin: 0;
-    padding: 0;
-    background-color: hsl(238, 60%, 11%);
+    background: linear-gradient(90deg, hsl(190, 100%, 80%), hsl(260, 100%, 80%));
+    padding-top: 3rem;
 }
 

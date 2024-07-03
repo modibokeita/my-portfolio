@@ -1,13 +1,11 @@
 //import Navbar from "./Navbar"
-//import Profile from "./Profile"
-import "./home.css"
-
-function Home() {
+import "./project.css"
+function Projects() {
   return (
-    <div className="content">
-
-      <div className="my-skills">
-        <h1>My Skills</h1>
+    <div className="project">
+        <h1>My Bara</h1>
+        <div className="my-skills">
+        <h1>My PROJECT</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
            A praesentium inventore nobis ipsa autem explicabo dolorum repudiandae consequuntur
           deleniti totam asperiores unde quasi repellat tenetur,
@@ -40,10 +38,9 @@ function Home() {
             <li><a href="#">Python</a></li>
           </ul>
       </div>
-
     </div>
   )
 }
 
-export default Home
+export default Projects
 

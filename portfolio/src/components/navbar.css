@@ -3,18 +3,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(237, 47%, 20%);
+    background: linear-gradient(90deg, hsl(190, 100%, 80%), hsl(260, 100%, 80%));
     color: white;
-    border-bottom: 5px solid hsl(238, 60%, 11%);
     padding: 0.5rem 1rem;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other content */
 }
 
 /* Brand title styling */
 .brand-title {
     font-size: 1.5rem;
-    border: 3px solid hsl(171, 89%, 43%);
+    border: 3px solid hsl(0, 0%, 97%);
     border-radius: 50%;
     padding: 0.5rem;
+    color: black;
 }
 
 /* Navigation link container */
@@ -39,7 +43,8 @@
 }
 
 .nav-link li a:hover {
-    background-color: hsl(237, 47%, 50%);
+    background: linear-gradient(90deg, hsl(190, 100%, 90%), hsl(270, 100%, 90%));
+    color: black;
 }
 
 /* Toggle button styling */
@@ -95,4 +100,15 @@
     .nav-link.active {
         display: flex;
     }
+}
+
+/* Ensure content does not overlap with the fixed navbar */
+body {
+    margin: 0; /* Reset default margin */
+    padding-top: 3rem; /* Adjust this value to match the navbar height */
+}
+
+.content {
+    margin-top: 3rem; /* Adjust this value to match the navbar height */
+    padding: 1rem; /* Optional: add some padding for the content */
 }
